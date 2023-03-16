@@ -6,5 +6,10 @@ contract ZombieFactory {
     uint dnaDigits = 16;
     // 곱셈
     uint dnaModulus = 10 ** dnaDigits;
+    // 구조체
+    struct Zombie {
+        string name; // 자료형 문자열
+        uint dna; // 자료형 정수
+    }
 
 }
