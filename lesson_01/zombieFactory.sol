@@ -14,6 +14,8 @@ contract ZombieFactory {
     //public 동적 배열
     Zombie[] public zombies;
     //함수 선언
-    function createZombie(string _name, uint _dna); // 좀비생성(고유이름,dna를 갖음)
+    function createZombie(string _name, uint _dna){ // 좀비생성(고유이름,dna를 갖음)
+
+    } 
 
 }
