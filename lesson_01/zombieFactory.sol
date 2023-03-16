@@ -11,5 +11,7 @@ contract ZombieFactory {
         string name; // 자료형 문자열
         uint dna; // 자료형 정수
     }
+    //public 동적 배열
+    Zombie[] public zombies;
 
 }
