@@ -22,6 +22,7 @@ contract ZombieFactory {
     uint id = zombies.push(Zombie(_name, _dna)) - 1;
     // 위에서 선언한 이벤트를 여기서 실행한다
     NewZombie(id, _name, _dna);
+    }
 
 
     // public은 누구나 함수를 호출할 수 있음
