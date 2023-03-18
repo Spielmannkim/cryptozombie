@@ -22,7 +22,10 @@ contract ZombieFactory {
     // view는 함수가 데이터를 보기만 하고 변경하지 않는다는 뜻.
     // pure는 함수가 앱에서 어떤 데이터도 접근하지 않는다는것을 의미.
     function _generateRandomDna(string _str) private view returns (uint){
-
+        // uint rand에 _str을 이용한 keccak256해시값을 받아와서 의사난수 16진수를 생성해서 결과값을 저장
+        uint rand = uint(keccak256(_str));
+        // 좀비의 DNA를 16자리 숫자로 만들기
+        return rand % dnaModulus;
     }
 
     } 
