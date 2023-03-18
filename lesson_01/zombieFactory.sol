@@ -27,6 +27,12 @@ contract ZombieFactory {
         // 좀비의 DNA를 16자리 숫자로 만들기
         return rand % dnaModulus;
     }
+    // 랜덤좀비 생성함수
+    function createRandomZombie(string _name) public {
+        // _name을 전달받은 _generateRandomDna 함수를 호출하여 randDna라는 변수에 uint형태로 저장
+        uint randDna = _generateRandomDna(_name);
+        // _createZombie함수를 호출하고 _name과 randDna를 전달
+        _createZombie(_name, randDna);
 
     } 
 
